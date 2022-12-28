@@ -24,10 +24,10 @@ class CreateHerosTable extends Migration
             $table->integer('power')->nullable();
             $table->integer('combat')->nullable();
             $table->string('race')->nullable();
-            $table->string('height_0')->nullable();
-            $table->string('height_1')->nullable();
-            $table->string('weight_0')->nullable();
-            $table->string('weight_1')->nullable();
+            $table->string('height0')->nullable();
+            $table->string('height1')->nullable();
+            $table->string('weight0')->nullable();
+            $table->string('weight1')->nullable();
             $table->string('eyeColor')->nullable();
             $table->string('hairColor')->nullable();
             $table->string('publisher')->nullable();
