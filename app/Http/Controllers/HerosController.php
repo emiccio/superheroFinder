@@ -48,8 +48,13 @@ class HerosController extends Controller
     public function searching(Request $hero)
     {
         $searchFields = $hero->all();
+
+        if(array_key_exists('id', $searchFields)){
+            $searchFields['external_id'] = $searchFields['id'];
+            unset($searchFields['id']);
+        }
+
         try {
-            //code...
             $superheros = Hero::where( function ($q) use ($searchFields) {
                                     foreach($searchFields as $key => $field) {
                                         $q->where($key, 'like', '%' .strtolower($field) . '%');
