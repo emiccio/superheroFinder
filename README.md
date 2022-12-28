@@ -9,10 +9,10 @@
 * Para correr localmente, se necesita crear la base de datos
 
 ```sh
-    Renombrar el archivo __.env.example__ a __.env__
+    Renombrar el archivo .env.example a .env
+    Configurar el archivo .env con los valores correctos para la conexcion con la BD
 ```
 
-* Configurar el archivo .env del proyecto con los valores correctos para la conexcion con la BD
 
 
 ```sh
