@@ -1,4 +1,4 @@
-### Ambiente de desarrollo local
+## Ambiente de desarrollo local
 
 * Clonar el repositorio
 
