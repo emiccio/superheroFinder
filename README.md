@@ -26,29 +26,37 @@
     php artisan migrate
 ```
 
-## Llenar la BD con la informacion inicial
+## Endpoits disponibles
 
-- http
+- Para llenar la BD con la informacion proporcionada en el csv
 ```
     GET /api/superhero
 ``` 
 
-- Response
 
 ```json
+    - Ejemplo de respuesta
     {
         "success": true,
         "message": "Updated the list of Superheroes."
     }
 ```
-## Buscador de super heroes
 
-- Search for hero
+
+- Buscador de super heroes
 ```
+    GET /api/superhero
+
+    - Ejemplo
+    GET /api/superhero?name=A-Bomb
+```
+
+```
+    Parametros disponibles para utilizar en la consulta
 
     | Parameter     | Type     |
     | ---------     | -------- |
-    | `id`          | `string` |
+    | `id`          | `number` |
     | `name`        | `string` |
     | `fullname`    | `string` |
     | `strength`    | `number` |
@@ -66,14 +74,9 @@
     | `publisher`   | `string` |
 
 ```
-- http
-```
-    GET /api/superhero
-```
-
-- Response
 
 ```json
+    - Ejemplo de respuesta
     {
         "success": true,
         "message": "Superheros found: 1",
